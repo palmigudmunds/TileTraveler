@@ -46,3 +46,13 @@ def west(user_input,x,y):
         return True,x,y
     else:
         return False,x,y
+       
+if x==1 and y==1:
+        print("You can travel: (N)orth.")
+        user_input = input("Direction: ")
+        valid,new_x,new_y = north(user_input,x,y)
+        if valid == False:
+            print("Not a valid direction!")
+        else:
+            x=new_x
+            y=new_y
